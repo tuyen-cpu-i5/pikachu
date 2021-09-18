@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <title>PIKACHU</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="bar">
+            <div class="logo">
+                <img src="img/login.png" alt=""></img>
+            </div>
+            <div class="title">
+                <div class="">
+                    <div class="level">
+                        <span class="level-title">LEVEL</span>
+                        <span class="level-value"> 1</span>
+                    </div>
+                    <div id="timebar">
+                        <div id="timeleft"></div>
+
+                    </div>
+                </div>
+
+                <div class="score">
+                    <span class="score-title">SCORE: </span>
+                    <span class="score-value">0</span>
+                </div>
+                <!-- <div>
+                        <span>Time</span>
+                        <span id="time">0</span>
+
+                    </div> -->
+
+            </div>
+
+        </div>
+
+        <div class="board">
+            <div class="left">
+                <div class="tools">
+                    <img id="sound" src="img/volume.png" onclick="sound()" alt="mute"></img>
+                    <img src="img/convert.png" alt="" id="convert" onclick="convert()">
+                    <span id="convert-value">3</span>
+                    <img src="img/btn-reset.png" onclick="reset()"></img>
+                    <!-- <button onclick="nextLevel()">next</button> -->
+                    <img src="img/hint.png" onclick="hint()" id="hint"></img>
+                    <span id="hint-value"></span>
+                </div>
+
+            </div>
+            <div id="pikachus"></div>
+        </div>
+
+    </div>
+    <!-- <audio src="sound/sound1.mp3"></audio>
+    <audio src="sound/sound2.mp3"></audio>
+    <audio src="sound/sound4.mp3"></audio>
+    <audio src="sound/sound5.mp3"></audio> -->
+    <script src="js/pikachu.js"></script>
+    <script src="js/game.js"></script>
+    <audio src="sound/sound-background-1.mp3"></audio>
+</body>
+
+</html>
